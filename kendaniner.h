@@ -13,8 +13,8 @@ private:
     std::string m_favoriteToy;
 
 public:
-    Dog(std::string tesak, bool trained,std::string ownerName, double barkVolume, double speed,std::string favoriteToy):
-
+    Dog(std::string name, int age, std::string color, double weight, int legs ,bool domestic,std::string tesak, bool trained,std::string ownerName, double barkVolume, double speed,std::string favoriteToy):
+    animal(name,age,color,weight,legs,domestic),
     m_tesak(tesak),
     m_trained(trained),
     m_ownerName(ownerName),
@@ -25,12 +25,12 @@ public:
 
     void printInfo() const override{
         animal::printInfo();  
-        std::cout << "tesak" << m_tesak << std::endl;
-        std::cout << "trained" << (m_trained? "Yes" : "No")  << std::endl;
-        std::cout << "ownerName" << m_ownerName << std::endl;
-        std::cout << "barkVolume" << m_barkVolume <<std::endl;
-        std::cout << "speed" << m_speed <<std::endl;
-        std::cout << "favoriteToy" << m_favoriteToy << std:: endl;
+        std::cout << "tesak:" << m_tesak << std::endl;
+        std::cout << "trained:" << (m_trained? "Yes" : "No")  << std::endl;
+        std::cout << "ownerName:" << m_ownerName << std::endl;
+        std::cout << "barkVolume:" << m_barkVolume <<std::endl;
+        std::cout << "speed:" << m_speed <<std::endl;
+        std::cout << "favoriteToy:" << m_favoriteToy << std:: endl;
 
         
     }
@@ -49,8 +49,8 @@ private:
     std::string m_favoriteToy;
 
 public:
-    Cat(std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
-
+    Cat(std::string name, int age, std::string color, double weight, int legs ,bool domestic,std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
+    animal(name,age,color,weight,legs,domestic),
     m_tesak(tesak),
     m_trained(trained),
     m_ownerName(ownerName),
@@ -61,12 +61,12 @@ public:
 
     void printInfo() const override{
         animal::printInfo();  
-        std::cout << "tesak" << m_tesak << std::endl;
-        std::cout << "trained" << (m_trained? "Yes" : "No")  << std::endl;
-        std::cout << "ownerName" << m_ownerName << std::endl;
-        std::cout << "barkVolume" << m_myauVolume <<std::endl;
-        std::cout << "speed" << m_speed <<std::endl;
-        std::cout << "favoriteToy" << m_favoriteToy << std:: endl;
+        std::cout << "tesak:" << m_tesak << std::endl;
+        std::cout << "trained:" << (m_trained? "Yes" : "No")  << std::endl;
+        std::cout << "ownerName:" << m_ownerName << std::endl;
+        std::cout << "barkVolume:" << m_myauVolume <<std::endl;
+        std::cout << "speed:" << m_speed <<std::endl;
+        std::cout << "favoriteToy:" << m_favoriteToy << std:: endl;
 
         
     }
@@ -85,8 +85,8 @@ private:
     std::string m_favoriteToy;
 
 public:
-    Horse(std::string tesak, bool trained,std::string ownerName, double volume, double speed,std::string favoriteToy):
-
+    Horse(std::string name, int age, std::string color, double weight, int legs ,bool domestic,std::string tesak, bool trained,std::string ownerName, double volume, double speed,std::string favoriteToy):
+    animal(name,age,color,weight,legs,domestic),
     m_tesak(tesak),
     m_trained(trained),
     m_ownerName(ownerName),
@@ -97,12 +97,12 @@ public:
 
     void printInfo() const override{
         animal::printInfo();  
-        std::cout << "tesak" << m_tesak << std::endl;
-        std::cout << "trained" << (m_trained? "Yes" : "No")  << std::endl;
-        std::cout << "ownerName" << m_ownerName << std::endl;
-        std::cout << "Volume" << m_volume <<std::endl;
-        std::cout << "speed" << m_speed <<std::endl;
-        std::cout << "favoriteToy" << m_favoriteToy << std:: endl;
+        std::cout << "tesak:" << m_tesak << std::endl;
+        std::cout << "trained:" << (m_trained? "Yes" : "No")  << std::endl;
+        std::cout << "ownerName:" << m_ownerName << std::endl;
+        std::cout << "Volume:" << m_volume <<std::endl;
+        std::cout << "speed:" << m_speed <<std::endl;
+        std::cout << "favoriteToy:" << m_favoriteToy << std:: endl;
 
         
     }
@@ -122,8 +122,8 @@ private:
     std::string m_favoriteToy;
 
 public:
-    Eagle(std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
-
+    Eagle(std::string name, int age, std::string color, double weight, int legs ,bool domestic,std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
+    animal(name,age,color,weight,legs,domestic),
     m_tesak(tesak),
     m_trained(trained),
     m_ownerName(ownerName),
@@ -134,12 +134,12 @@ public:
 
     void printInfo() const override{
         animal::printInfo();  
-        std::cout << "tesak" << m_tesak << std::endl;
-        std::cout << "trained" << (m_trained? "Yes" : "No")  << std::endl;
-        std::cout << "ownerName" << m_ownerName << std::endl;
-        std::cout << "barkVolume" << m_myauVolume <<std::endl;
-        std::cout << "speed" << m_speed <<std::endl;
-        std::cout << "favoriteToy" << m_favoriteToy << std:: endl;
+        std::cout << "tesak:" << m_tesak << std::endl;
+        std::cout << "trained:" << (m_trained? "Yes" : "No")  << std::endl;
+        std::cout << "ownerName:" << m_ownerName << std::endl;
+        std::cout << "barkVolume:" << m_myauVolume <<std::endl;
+        std::cout << "speed:" << m_speed <<std::endl;
+        std::cout << "favoriteToy:" << m_favoriteToy << std:: endl;
 
         
     }
@@ -163,8 +163,8 @@ private:
     std::string m_favoriteToy;
 
 public:
-    Monkey(std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
-
+    Monkey(std::string name, int age, std::string color, double weight, int legs ,bool domestic,std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
+    animal(name,age,color,weight,legs,domestic),
     m_tesak(tesak),
     m_trained(trained),
     m_ownerName(ownerName),
@@ -175,12 +175,12 @@ public:
 
     void printInfo() const override{
         animal::printInfo();  
-        std::cout << "tesak" << m_tesak << std::endl;
-        std::cout << "trained" << (m_trained? "Yes" : "No")  << std::endl;
-        std::cout << "ownerName" << m_ownerName << std::endl;
-        std::cout << "barkVolume" << m_myauVolume <<std::endl;
-        std::cout << "speed" << m_speed <<std::endl;
-        std::cout << "favoriteToy" << m_favoriteToy << std:: endl;
+        std::cout << "tesak:" << m_tesak << std::endl;
+        std::cout << "trained:" << (m_trained? "Yes" : "No")  << std::endl;
+        std::cout << "ownerName:" << m_ownerName << std::endl;
+        std::cout << "barkVolume:" << m_myauVolume <<std::endl;
+        std::cout << "speed:" << m_speed <<std::endl;
+        std::cout << "favoriteToy:" << m_favoriteToy << std:: endl;
 
         
     }
@@ -206,8 +206,8 @@ private:
     std::string m_favoriteToy;
 
 public:
-    Elephant(std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
-
+    Elephant(std::string name, int age, std::string color, double weight, int legs ,bool domestic,std::string tesak, bool trained,std::string ownerName, double myauVolume, double speed,std::string favoriteToy):
+    animal(name,age,color,weight,legs,domestic),
     m_tesak(tesak),
     m_trained(trained),
     m_ownerName(ownerName),
@@ -218,12 +218,12 @@ public:
 
     void printInfo() const override{
         animal::printInfo();  
-        std::cout << "tesak" << m_tesak << std::endl;
-        std::cout << "trained" << (m_trained? "Yes" : "No")  << std::endl;
-        std::cout << "ownerName" << m_ownerName << std::endl;
-        std::cout << "barkVolume" << m_myauVolume <<std::endl;
-        std::cout << "speed" << m_speed <<std::endl;
-        std::cout << "favoriteToy" << m_favoriteToy << std:: endl;
+        std::cout << "tesak:" << m_tesak << std::endl;
+        std::cout << "trained:" << (m_trained? "Yes" : "No")  << std::endl;
+        std::cout << "ownerName:" << m_ownerName << std::endl;
+        std::cout << "barkVolume:" << m_myauVolume <<std::endl;
+        std::cout << "speed:" << m_speed <<std::endl;
+        std::cout << "favoriteToy:" << m_favoriteToy << std:: endl;
 
         
     }
@@ -235,7 +235,7 @@ public:
 
 
 
-
+ 
 
 
 #endif 
