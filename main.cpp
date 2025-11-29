@@ -8,6 +8,13 @@ int main() {
     Monkey monkey("mamu",3,"brown",14,2,false,"kapik",true, "Ashot",2,10,"toy" );
     Elephant elephant("titan",3,"brown",14,4,false,"kapik",false, "Ashot",2,10,"toy" );
 
+    animal a("rex",5,"black",25,4,true);
+    animal b("rex",5,"black",18,4,true);
+
+
+    if (a < b) std::cout << "Dog is heavier\n";
+    if (a > b) std::cout << "Dog is lighter\n";
+    if (a == b) std::cout << "Same weight\n";
 
     dog.printInfo();
     std::cout << "----------------------\n";

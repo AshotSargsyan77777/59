@@ -7,7 +7,7 @@
 
 
 class animal {
-protected:
+public:
     
     std::string m_name;
     int m_age;
@@ -37,40 +37,23 @@ public:
 
 
     }
-
-animal(animal&& other)noexcept:
-m_name(std::move(other .m_name)),
-m_age(other .m_age),
-m_color(std::move(other .m_color)),
-m_weight(other .m_weight),
-m_legs(other .m_legs),
-m_domestic(other .m_domestic){
-    other .m_age = 0;
-    other .m_weight = 0;
-    other .m_legs = 0;
-    other .m_domestic = false;
-
-
-}
-
-animal& operator=(animal&& other)noexcept{
-    if(this !=&other){
-        m_name = std::move(other .m_name);
-        m_age = other .m_age;
-        m_color = std::move(other .m_color);
-        m_weight = other .m_weight;
-        m_legs = other .m_legs;
-        m_domestic = other .m_domestic;
-
-
-        other .m_age = 0;
-        other .m_weight = 0;
-        other .m_legs = 0;
-        other .m_domestic = false;
-
+    
+    friend bool operator<(const animal& a,const animal& b){
+        return a.m_weight < b.m_weight;
     }
-    return *this;
-}
+
+     friend bool operator>(const animal& a,const animal& b){
+        return a.m_weight > b.m_weight;
+    }
+
+     friend bool operator==(const animal& a,const animal& b){
+        return a.m_weight == b.m_weight;
+    }
+
+
+
+
+   
 
 
 
